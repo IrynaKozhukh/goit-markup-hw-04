@@ -111,13 +111,12 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--first-text-color);
-  padding-left: 10px;
 }
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
 }
-.contacts,
+
 .header-link-style {
   font-weight: 500;
   font-size: 14px;
@@ -125,6 +124,16 @@ body {
   letter-spacing: 0.02em;
   color: var(--second-text-color);
 }
+
+.current {
+  color: var(--accent-color);
+}
+
+
+.contacts {
+  color: var(--second-text-color);
+}
+
 .contacts:active,
 .contacts:hover,
 .contacts:focus {
@@ -147,7 +156,8 @@ body {
   flex-wrap: wrap;
 }
 .header-item > .link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -157,10 +167,17 @@ body {
 .header-list > .header-item:not(:last-child) {
   margin-right: 50px;
 }
-.header-icons {
+.envelope, .smartphone {
   margin-right: 10px;
   fill: currentColor;
-  position: absolute;
+}
+.smartphone {
+  width: 16px;
+  height: 12px;
+}
+.envelope {
+  width: 16px;
+  height: 12px; 
 }
 .header-icons:hover,
 .header-icons:focus {
@@ -337,6 +354,9 @@ body {
   width: 44px;
   height: 44px;
 }
+.footer-social-item {
+  margin-bottom: ;
+}
 .team-social-item + .team-social-item {
   margin-left: 10px;
 }
@@ -383,6 +403,10 @@ body {
   border-top: 1px solid transparent;
   padding: 20px 24px;
   text-align: left;
+}
+
+.portfolio-card:hover {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 .portfolio-btn {
   cursor: pointer;
@@ -440,18 +464,15 @@ body {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-
   color: #afb1b8;
 }
 .clients-item:hover,
 .clients-item:focus {
   color: var(--accent-color);
 }
-
 .clients-list + .clients-list {
   margin-right: 30px;
 }
-
 .clients-icon {
   width: 106px;
   height: 60px;
@@ -466,10 +487,16 @@ body {
   display: flex;
   align-items: center;
 }
-
 .container > .link.logo {
   padding: 0;
   margin: 0 0 20px 0;
+}
+.footer-navigation {
+  margin-right: 70px;
+}
+.footer-navigation > .link.logo.footer-logo {
+    padding: 0;
+    margin: 0 0 20px 0;
 }
 .footer-logo {
   color: var(--second-logo-color);
@@ -489,8 +516,12 @@ body {
   margin-bottom: 9px;
   color: var(--third-text-color);
 }
-
+.footer > .container {
+    display: flex;
+    align-items: baseline;
+}
 .footer-text {
+
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 14px;
@@ -512,12 +543,13 @@ body {
 .footer-social-link:focus {
   background-color: var(--accent-color);
 }
-
 .footer-social-link {
   background-color: rgba(255, 255, 255, 0.1);
 }
-
 .footer-icons {
   fill: var(--third-text-color);
   color: #ffffff;
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
