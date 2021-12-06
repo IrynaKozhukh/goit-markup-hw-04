@@ -43,11 +43,9 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
-
 .container > .hero-btn {
   margin: inherit;
 }
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -124,16 +122,12 @@ body {
   letter-spacing: 0.02em;
   color: var(--second-text-color);
 }
-
 .current {
   color: var(--accent-color);
 }
-
-
 .contacts {
   color: var(--second-text-color);
 }
-
 .contacts:active,
 .contacts:hover,
 .contacts:focus {
@@ -376,7 +370,6 @@ body {
 .team-social-link:focus .team-social-icon {
   fill: var(--second-logo-color);
 }
-
 .team-social-list,
 .clients {
   display: flex;
@@ -468,6 +461,7 @@ body {
 .clients-item:hover,
 .clients-item:focus {
   color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 .clients-list + .clients-list {
   margin-right: 30px;
@@ -521,7 +515,6 @@ body {
     align-items: baseline;
 }
 .footer-text {
-
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 14px;
